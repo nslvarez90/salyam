@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url(./fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url(./fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(./fonts/SegoeUI.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url(./fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Italic';
+    src: url(./fonts/Ubuntu-Italic.ttf);
+}
+
+/*
+*iconos
+*/
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.icon-big {
+    transform: scale(1.75);
+}
+
+.icon-bolsa-empleo {
+    background-image: url("../images/bolsa-empleo.svg");
+}
+
+.icon-buscar {
+    background-image: url("../images/buscar.svg");
+}
+
+body {
+    font-family: 'Ubuntu Regular' !important;
+    font-size: 24px;
+
+}
+
+.header-color {
+    background-color: #FFFFFF;
+}
+
+.header-height {
+    margin-top: 163px !important;
+}
+
+.top {
+    background-image: url('../images/hedaer.svg');
+    width: 100vw;
+    height: 6.3vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 260px !important;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+}
+
+a.item-icon {
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+}
+
+/*
+*Slides 
+*/
+.my-full {
+    --bs-gutter-x: 0 !important;
+}
+
+.slide-img {
+    min-height: 60vh;
+    max-height: 60vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.titulo-slide {
+    font-family: 'Montserrat Bold';
+    font-size: 45px;
+}
+
+.subtitulo-slide {
+    font-family: 'Montserrat Regular';
+    font-size: 21px;
+}
+
+.boton-slide {
+    font-family: 'Ubuntu Bold';
+    font-size: 18px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .text-intro {
+        font-size: larger !important;
+    }
+
+    .titulo-slide {
+        font-size: 30px;
+    }
+
+    .subtitulo-slide {
+        font-size: 14px;
+    }
+
+    .boton-slide {
+        font-size: 14px;
+    }
+
+    .top {
+        background-image: url('../images/header_movil.svg');
+        width: 100vw;
+        height: 6.3vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .slide-img {
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+}
+
+/**
+*SERVICES
+*/
+.swiper {
+    width: 100%;
+    height: 65vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #FCAB00 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #999999 !important;
+}
+
+/**
+*ABOUT US
+*/
+.bg-about-us {
+    background-color: #FEE6B2;
+}
+
+.about-title {
+    font-family: 'Ubuntu Bold';
+}
+
+.about-subtitle {
+    font-family: 'Montserrat Regular';
+}
+
+.about-content {
+    font-family: 'Ubuntu Regular';
+}
+
+/**
+* Proyects
+*/
+.text-yellow {
+    color: #FCAB00;
+}
+
+.bg-purple {
+    background-color: #453354;
+}
+
+.custom-card {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.text-resume {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.img-div::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 66.66%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .img-div::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 28%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+/**
+*COMENTS
+*/
+div.swiper.myComents,
+div.swiper.mySocios {
+    height: auto !important;
+}
+
+.socios-color {
+    color: #666666;
+}
+
+form div.forminator-row input.forminator-input {
+    border-color: #D6D6D6 !important;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    height: 35px !important;
+}
+
+form div.forminator-row textarea.forminator-textarea {
+    border-color: #D6D6D6 !important;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-radius: 5px !important;
+    height: 135px !important;
+}
+
+.forminator-row {
+    margin-bottom: 5px !important;
+}
+
+.image_socios {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    background-color: #D6D6D6;
+    border-radius: 30px 40px 15px;
+}
+
+.image_socios img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 30px;
+    border-bottom-right-radius: 15px;
+}
+
+/**
+*FOOTER
+*/
+.bg-foter {
+    background-color: #D6D6D6;
+}
+
+.footer-size {
+    font-size: .8rem;
+}
+.copyright{
+    font-family:'Ubuntu Italic' ;
+    font-size: 0.7em;
+    color: #000000;
+}
+.bottom {
+    background-image: url('../images/hedaer.svg');
+    rotate: 180deg;
+    width: 100vw;
+    height: 6.3vh;
+    margin-left: -1% !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
